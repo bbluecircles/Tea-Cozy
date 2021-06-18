@@ -4,10 +4,12 @@ html {
     font-size: 22px;
     background-color: black;
     text-align: center;
+    height: 100%;
 }
 body {
     box-sizing: border-box;
     margin: 0;
+    height: 100%;
 }
 * {
     opacity: 0.9;
@@ -36,6 +38,9 @@ header nav {
     width: 400px;
     justify-content: space-between;
     text-decoration: underline;
+}
+header nav a {
+    color: inherit;
 }
 
 /* End */
