@@ -48,14 +48,29 @@ main {
     margin-right: auto;
 }
 
+.main_section {
+    display: flex;
+    align-items: center;
+    height: 700px;
+}
+.figure_grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.figure_grid figure {
+    width: 300px;
+    height: 200px;
+    margin: 30px 15px;
+}
+.figure_grid figure img {
+    height: 100%;
+}
 /* Mission */
 
 #mission {
-    display: flex;
-    align-items: center;
     background-image: url("assets/images/img-bedford-bizarre.jpg");
     background-size: cover;
-    height: 700px;
 }
 #mission div {
     display: inline-block;
@@ -69,7 +84,19 @@ main {
     line-height: 150%;
 }
 
-/* */
+/* END */
+
+/* Tea of the Month */
+
+#tea_of_month {
+    height: auto;
+}
+
+#tea_of_month section {
+    width: 1000px;
+    margin: 50px auto 50px auto;
+}
+
 
 @media only screen and (max-width: 630px) {
     header {
@@ -95,11 +122,24 @@ main {
     main {
         width: 100%;
     }
-    #mission {
+    .main_section {
         height: 500px;
     }
-    #mission div h2, h4 {
+    #mission div h2 {
         margin: 10px 10px;
-        font-size: 0.9rem;
+        font-size: 1rem;
+    }
+    #mission div h4 {
+        margin: 10px 10px;
+        font-size: 0.8rem;
+    }
+    #tea_of_month h2 {
+        font-size: 0.85rem;
+    }
+    #tea_of_month h4 {
+        font-size: 0.85rem;
+    }
+    #tea_of_month section {
+        width: 100%;
     }
 }
