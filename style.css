@@ -1,5 +1,4 @@
 html {
-    box-sizing: border-box;
     font-family: Helvetica;
     color: seashell;
     font-size: 22px;
@@ -8,7 +7,9 @@ html {
     text-align: center;
 }
 body {
+    box-sizing: border-box;
     margin: 0;
+    opacity: 0.9;
 }
 
 /* Header */
@@ -36,7 +37,39 @@ header nav {
 
 /* End */
 
-/* Header Media Queries */
+
+/* End */
+
+/* Main */
+
+main {
+    width: calc(100% - 80px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mission */
+
+#mission {
+    display: flex;
+    align-items: center;
+    background-image: url("assets/images/img-bedford-bizarre.jpg");
+    background-size: cover;
+    height: 700px;
+}
+#mission div {
+    display: inline-block;
+    width: 100%;
+    background: black;
+    box-sizing: border-box;
+}
+#mission div h2, h4 {
+    display: inline-block;
+    margin: 10px 0px;
+    line-height: 150%;
+}
+
+/* */
 
 @media only screen and (max-width: 630px) {
     header {
@@ -48,16 +81,25 @@ header nav {
         box-sizing: border-box;
         width: 100%;
         height: auto;
-        font-size: 0.9rem;
-        margin: 25px 10px;
+        margin: 25px 25px;
     }
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 410px) {
     header nav {
         flex-direction: column;
         margin-top: 20px;
     }
     header nav a {
         margin-top: 10px;
+    }
+    main {
+        width: 100%;
+    }
+    #mission {
+        height: 500px;
+    }
+    #mission div h2, h4 {
+        margin: 10px 10px;
+        font-size: 0.9rem;
     }
 }
