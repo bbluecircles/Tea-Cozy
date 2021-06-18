@@ -7,4 +7,57 @@ html {
     opacity: 0.9;
     text-align: center;
 }
+body {
+    margin: 0;
+}
 
+/* Header */
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 75px;
+    border-bottom: 1px solid seashell;
+    align-items: center;
+}
+header img, nav {
+    padding: 0px 10px;
+}
+#logo {
+    height: 50px;
+}
+header nav {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    text-decoration: underline;
+}
+
+/* End */
+
+/* Header Media Queries */
+
+@media only screen and (max-width: 630px) {
+    header {
+        height: auto;
+        flex-direction: column;
+        margin-top: 12px;
+    }
+    header nav {
+        box-sizing: border-box;
+        width: 100%;
+        height: auto;
+        font-size: 0.9rem;
+        margin: 25px 10px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    header nav {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    header nav a {
+        margin-top: 10px;
+    }
+}
