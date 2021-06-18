@@ -51,7 +51,6 @@ main {
 .main_section {
     display: flex;
     align-items: center;
-    height: 700px;
 }
 .figure_grid {
     display: flex;
@@ -71,6 +70,7 @@ main {
 #mission {
     background-image: url("assets/images/img-bedford-bizarre.jpg");
     background-size: cover;
+    height: 700px;
 }
 #mission div {
     display: inline-block;
@@ -97,7 +97,34 @@ main {
     margin: 50px auto 50px auto;
 }
 
+/* Locations */
 
+#locations {
+    background-image: url('assets/images/img-locations-background.jpg');
+    background-size: cover;
+    min-height: 500px;
+}
+#locations section {
+    margin-left: auto;
+    margin-right: auto;
+}
+#locations section div{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+#locations section div figure {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background: black;
+}
+#locations section div figure span {
+    margin: 20px 0px
+}
 @media only screen and (max-width: 630px) {
     header {
         height: auto;
@@ -122,7 +149,7 @@ main {
     main {
         width: 100%;
     }
-    .main_section {
+    #mission {
         height: 500px;
     }
     #mission div h2 {
@@ -141,5 +168,9 @@ main {
     }
     #tea_of_month section {
         width: 100%;
+    }
+    #locations section div figure {
+        margin: 25px 0px;
+        width: calc(100% - 20px);
     }
 }
