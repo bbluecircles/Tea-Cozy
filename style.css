@@ -125,6 +125,34 @@ main {
 #locations section div figure span {
     margin: 20px 0px
 }
+
+/* Contact */
+#contact {
+    min-height: 200px;
+}
+
+#contact div {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact div h2 {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+#contact div a {
+    margin-bottom: 20px;
+    font-size: 0.8rem;
+}
+footer {
+    margin-left: 20px;
+}
+footer span {
+    float: left;
+    font-size: 0.8rem;
+}
+
 @media only screen and (max-width: 630px) {
     header {
         height: auto;
@@ -136,6 +164,9 @@ main {
         width: 100%;
         height: auto;
         margin: 25px 25px;
+    }
+    footer {
+        display: none;
     }
 }
 @media only screen and (max-width: 410px) {
