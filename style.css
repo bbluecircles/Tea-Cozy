@@ -1,0 +1,10 @@
+html {
+    box-sizing: border-box;
+    font-family: Helvetica;
+    color: seashell;
+    font-size: 22px;
+    background-color: black;
+    opacity: 0.9;
+    text-align: center;
+}
+
