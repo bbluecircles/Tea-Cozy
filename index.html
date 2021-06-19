@@ -2,14 +2,29 @@
     <head>
         <meta name="viewport" content="width=device-width, inital-scale=1">
         <link rel="stylesheet" href="style.css" />
+        <script async type="text/javascript" src="script.js"></script>
+        <script defer>
+            let pages = [];
+            document.addEventListener('DOMContentLoaded', function() {
+                pages = [
+                    document.getElementById('mission'),
+                    document.getElementById('tea_of_month'),
+                    document.getElementById('locations')
+                ];
+                scrollPage.setHeights = pages;
+            });
+            document.onresize = function() {
+                scrollPage.setHeights = pages;
+            }
+        </script>
     </head>
     <body>
         <header>
             <img id="logo" src="assets/img-tea-cozy-logo.png" />
-            <nav>
-                <a href="#misson">Mission</a>
-                <a href="#tea_of_month">Featured Tea</a>
-                <a href="#locations">Locations</a>
+            <nav id="navigation">
+                <a onclick="scrollPage.scroll(scrollPage.yIndicies.mission)">Mission</a>
+                <a onclick="scrollPage.scroll(scrollPage.yIndicies.tea_of_month)">Featured Tea</a>
+                <a onclick="scrollPage.scroll(scrollPage.yIndicies.locations)">Locations</a>
             </nav>
         </header>
         <main>
